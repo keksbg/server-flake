@@ -31,7 +31,7 @@
         nixosConfigurations."nix-plex" = mkSystem nixpkgs "x86_64-linux";
         packages."x86_64-linux" = import nixpkgs {
           inherit overlays;
-          system = "x64_64-linux";
+          system = "x86_64-linux";
         };
       };
 }
