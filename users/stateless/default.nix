@@ -1,6 +1,16 @@
 { config, lib, modules, pkgs, ... }:
 
 {
+  users.groups.media = {
+    name = "media";
+  };
+
+  users.users.media = {
+    isSystemUser = true;
+    group = "media";
+    home = "/home/media";
+  };
+
   users.users.diaphanus = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
