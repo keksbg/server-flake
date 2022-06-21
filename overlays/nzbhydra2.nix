@@ -4,7 +4,7 @@ self: super: {
     version = "4.3.3";
     src = super.fetchzip {
       url = "https://github.com/theotherp/${pname}/releases/download/v${version}/${pname}-${version}-linux.zip";
-      sha256 = "1i8g9rqhd9gh11gmcdvdx0350yqjd5x4vk6wmzm8b054g1nlp1v8";
+      sha256 = "17cc393vn87gn66bwrq7ps299aikg5lzfjsb8ap6xrylj2h81qas";
       stripRoot = false;
     };
   });
