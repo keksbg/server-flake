@@ -12,6 +12,7 @@ in
     "/" = {
       device = "tmpfs";
       fsType = "tmpfs";
+      options = [ "mode=755" ];
     };
 
     "/nix" = mkBtrfsMount "nix" [ "noatime" ];
