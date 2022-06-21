@@ -1,5 +1,6 @@
 self: super: {
   nzbhydra2 = super.nzbhydra2.overrideAttrs (_: rec {
+    pname = "nzbhydra2";
     version = "4.3.3";
     src = super.fetchzip {
       url = "https://github.com/theotherp/${pname}/releases/download/v${version}/${pname}-${version}-linux.zip";
