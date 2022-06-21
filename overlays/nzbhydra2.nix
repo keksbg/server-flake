@@ -7,5 +7,6 @@ self: super: {
       sha256 = "17cc393vn87gn66bwrq7ps299aikg5lzfjsb8ap6xrylj2h81qas";
       stripRoot = false;
     };
+    nativeBuildInputs = with super; [ adoptopenjdk-jre-hotspot-bin-16 makeWrapper unzip ];
   });
 }
